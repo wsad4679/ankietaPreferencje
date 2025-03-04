@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ankietaPreferencje", "ankietaPreferencje\ankietaPreferencje.csproj", "{7DB28099-7F85-4DDA-9A84-C478EFC6E2FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DB28099-7F85-4DDA-9A84-C478EFC6E2FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB28099-7F85-4DDA-9A84-C478EFC6E2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB28099-7F85-4DDA-9A84-C478EFC6E2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB28099-7F85-4DDA-9A84-C478EFC6E2FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
