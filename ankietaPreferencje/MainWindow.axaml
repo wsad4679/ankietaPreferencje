@@ -4,7 +4,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="ankietaPreferencje.MainWindow"
-        Title="ankietaPreferencje">
+        Title="ankietaPreferencje"
+        Width="1200"
+        Height="800"
+        >
+        
+        
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="10">
+                <TextBlock Text="Twoje dane: " Margin="10" HorizontalAlignment="Center"/>
+                
+                <Grid ShowGridLines="False" Margin="0 10 0 10">
+                        <Grid.RowDefinitions >
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                
+                        </Grid.RowDefinitions>
+                        
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                
+                        </Grid.ColumnDefinitions>
+                        
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Podaj swoje imie: " Margin="10" />
+                        <TextBox Grid.Row="0" Grid.Column="1" x:Name="InputNameTextBox" Width="200" Margin="0 10 0 10"/>
+                        
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Twoje zainteresowania: " Margin="10" />
+                        <ComboBox Grid.Row="1" Grid.Column="1" x:Name="Hobby" SelectedIndex="0" Margin="0 10 0 10">
+                                <ComboBoxItem Content="Nic"/>
+                                <ComboBoxItem Content="Sport"/>
+                                <ComboBoxItem Content="Muzyka"/>
+                                <ComboBoxItem Content="Kultura"/>
+                                <ComboBoxItem Content="Gotowanie"/>
+                                <ComboBoxItem Content="Nauka"/>
+                        </ComboBox>
+                </Grid>
+                <Button x:Name="InpButton" Content="Zatwierdź dane" HorizontalAlignment="Center" Margin="20"/>
+                
+                
+        </StackPanel>
+        
     
         
 </Window>
+
+
+
+
