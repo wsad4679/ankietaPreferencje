@@ -23,11 +23,13 @@
                         <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
                                 
                         </Grid.ColumnDefinitions>
                         
                         <TextBlock Grid.Row="0" Grid.Column="0" Text="Podaj swoje imie: " Margin="10" />
                         <TextBox Grid.Row="0" Grid.Column="1" x:Name="InputNameTextBox" Width="200" Margin="0 10 0 10"/>
+                        <TextBlock Grid.Row="0" Grid.Column="2" x:Name="WarningTextBlock" Margin="10" HorizontalAlignment="Center"/>
                         
                         <TextBlock Grid.Row="1" Grid.Column="0" Text="Twoje zainteresowania: " Margin="10" />
                         <ComboBox Grid.Row="1" Grid.Column="1" x:Name="Hobby" SelectedIndex="0" Margin="0 10 0 10">
@@ -39,7 +41,7 @@
                                 <ComboBoxItem Content="Nauka"/>
                         </ComboBox>
                 </Grid>
-                <Button x:Name="InputPersonalInfoButton" Content="Zatwierdź dane" HorizontalAlignment="Center" Margin="20"/>
+                <Button x:Name="InputPersonalInfoButton" Click="CheckbuttonClick" Content="Zatwierdź dane" HorizontalAlignment="Center" Margin="20"/>
                 
                 <Separator/>
                 
@@ -70,7 +72,7 @@
                         <CheckBox Grid.Row="3" Grid.Column="1" Margin="10 5  0 10" x:Name="FourthCheckBox"/>
                 </Grid>
                 
-                <Button x:Name="InputQuestionsButton" Content="Zatwierdź odpowiedzi" HorizontalAlignment="Center" Margin="20"/>
+                <Button x:Name="SendAnswerButtonClick" Click="SendButtonClick" Content="Zatwierdź odpowiedzi" HorizontalAlignment="Center" Margin="20"/>
                 
                 <Separator/>
                 
